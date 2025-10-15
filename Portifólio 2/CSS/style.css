@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --main-bg-color: #f5f5f5    ;
+    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+    color: black;
+    /* altera a cor de todos os links das páginas */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* === HEADER === */
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    border: 1px solid #e5e5e5;
+    margin: 2vw 2vw;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: block;
+}
+
+header nav ul li a.atual {
+    background-color: black;
+    color: white;
+}
+
+/* === BANNER === */
+
+section.banner {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+section.banner h1 {
+    width: 50%;
+    font-size: 2.2rem;
+}
+
+
