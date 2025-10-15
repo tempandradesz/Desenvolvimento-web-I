@@ -1,0 +1,282 @@
+/*==============================
+Geral
+================================*/
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(15px + 0.390625vw)
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/*==============================
+header
+================================*/
+header nav ul li {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*==============================
+Banner
+================================*/
+section.banner {
+    text-align: center;
+    margin: 0 20vw 0 20vw;
+}
+
+section.banner img {
+    width: 60%;
+}
+
+section.banner h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 20px 0 20px 0;  
+}
+
+section.banner p {
+    font-size: 1.1rem;
+}
+
+section.banner p button {
+    background: #FF6464;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 0 80px;
+    border-radius: 7px;
+}
+
+/*===============================
+Recent posts
+=================================*/
+section.post {
+    background-color: #EDF7FA;
+    padding: 20px 10px 20px 10px;
+}
+
+section.post ul li {
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    padding: 10px 80px 20px 20px;
+}
+
+section.post ul li h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0px 20px 20px 0px;
+}
+
+p.data {
+    font-size: 1rem;
+    padding: 0px 0px 10px 0px;
+}
+
+section.post ul li p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/*============================
+Works
+==============================*/
+section.works {
+    padding: 20px 10px 20px 10px;
+}
+
+section.works img {
+    border: none;
+    padding: 20px 20px 20px 20px;
+}
+
+section.works ul li h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0px 20px 20px 0px;
+}
+
+p.corTexto {
+    color: #a6adb4;
+    font-size: 1rem;
+    padding: 0px 5px 20px 5px;
+}
+
+span.years {
+    font-weight: bold;
+    background: #142850;
+    color: white;
+    padding: 1px 5px 2px 10px;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    margin: 0px 10px 0px 0px;
+}
+
+section.works ul li p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+section.works ul li {
+    padding: 0px 20px 0px 20px;
+}
+
+/*=============================
+footer
+===============================*/
+
+footer {
+    text-align: center;
+    padding: 20vw 0 10vw 0;
+}
+
+footer nav p a {
+    color: #21243D;
+    font-size: 1.8rem;
+    margin: 0px 5px 0px 5px;    
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (min-width: 900px) {
+    header {
+        padding: 3vw 2vw 5vw 2vw;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: right;
+    }
+
+    header nav ul li {
+        margin: 0 20px 0 20px;
+    }
+
+    main section h2 {
+        text-align: left;
+    }
+
+    section.banner {
+        display: flex;
+        flex-direction:  row-reverse;
+        margin: 0 10vw 0 10vw;
+    }
+
+    section.banner div.texto {
+        width: 50%;
+        text-align: left;
+        padding: 0 10vw 0 0;
+    }
+
+    section.banner img {
+        width: 100%;
+    }
+
+    section.post ul {
+        display: flex;
+        margin: 1vw 0 0 0;
+    }
+
+    section.post {
+        padding: 3vw 10vw 3vw 10vw;
+    } 
+
+    section.post ul li {
+        margin: 0 1vw 0 1vw;
+    }
+
+    section.works ul {
+        display: flex;
+    }
+
+    section.works {
+        padding: 10vw 10vw 10vw 10vw;
+    }
+
+    section.works h2 {
+        font-size: 2rem;
+        padding: 0 0 3vw 0;
+    }
+
+}
+
+
+/*============================================
+    SEGUNDA PÀGINA/ADICIONAIS 
+==============================================*/
+
+
+
+/*===============================================
+WORKS
+=================================================*/
+
+section.pgTwo-works h2 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+section.pgTwo-works {
+    text-align: left;
+}
+
+section.pgTwo-works ul li h3 {
+    margin: 1vw 1vw 1vw 1vw;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+span.pgTwo-years {
+    font-weight: bold;
+    background: #142850;
+    color: white;
+    padding: 1px 5px 2px 10px;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    margin: 0px 10px 0px 0px;
+}
+
+p.pgTwo-corTexto {
+    color: #a6adb4;
+    font-size: 1rem;
+    padding: 0px 5px 20px 5px;
+}
+
+section.pgTwo-works ul li p {
+    margin: 20px 20px 20px 20px;
+
+}
+
+li.pgTwo-corWorks a{
+    color: #FF6464;
+}
+/* CSS media query dentro de um stylesheet */
+@media (min-width: 900px) {
+
+
+   /* section.pgTwo-works ul {
+        display: flex;
+    }*/
+
+    section.pgTwo-works {
+        padding: 0 5vw 5vw 5vw;
+    }
+
+    section.pgTwo-works h2 {
+        font-size: 2rem;
+        padding: 0 0 3vw 0;
+    }
+
+}
