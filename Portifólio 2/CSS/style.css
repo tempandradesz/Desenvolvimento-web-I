@@ -21,6 +21,12 @@ body {
     background-color: var(--main-bg-color);
 }
 
+
+/*====================
+ABOUT/HOME
+======================*/
+
+
 /* === HEADER === */
 
 header nav {
@@ -51,15 +57,250 @@ header nav ul li a.atual {
 /* === BANNER === */
 
 section.banner {
-    display: flex;
-    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw auto 0 auto;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
+}
+
+section.banner h1 span {
+    font-weight: bold;
 }
 
 section.banner h1 {
-    width: 50%;
+    /*width: 50%;*/
     font-size: 2.2rem;
 }
 
+/* === POSTS === */
 
+section.posts {
+    margin: 5vw auto 0 auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+section.posts > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section.posts > ul > li {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.posts > ul > li h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section.posts > ul > li p {
+    color: #757575;
+    line-height: 1.5rem;
+}
+
+section.posts > ul > li ul {
+    display: flex;
+    gap: 20px;
+} 
+
+section.posts > ul > li ul li {
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 3px 6px;
+    background-color: #e5e5e5;
+}
+
+section.posts > ul > li ul li a {
+    font-weight: bold;
+    padding: 5vw 0 0 0;
+}
+
+
+
+/*=======================
+PRODUCTS
+=========================*/
+
+
+/* === EcoCharge ===*/
+
+section.ecocharge {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.ecocharge h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.ecocharge p {
+    margin: 10px 0;
+    color: gray;
+}
+
+
+/* === FinWise ===*/
+
+section.finwise {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.finwise h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.finwise p {
+    margin: 10px 0;
+    color: gray;
+}
+
+
+/* === SmartAgro ===*/
+
+section.smartagro {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.smartagro h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.smartagro p {
+    margin: 10px 0;
+    color: gray;
+}
+
+
+/* === PicSphere ===*/
+
+section.picsphere {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.picsphere h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.picsphere p {
+    margin: 10px 0;
+    color: gray;
+}
+
+
+/* === HealthTrack ===*/
+
+section.healthtrack {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.healthtrack h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.healthtrack p {
+    margin: 10px 0;
+    color: gray;
+}
+
+
+/* === MentorHub ===*/
+
+section.mentorhub {
+    margin: 5vw 5vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.mentorhub h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.mentorhub p {
+    margin: 10px 0;
+    color: gray;
+}
+
+/*=====================
+CONNECT
+=======================*/
+
+/* === RedesSociais ===*/
+
+section.redessociais {
+    margin: 2vw 2vw;
+}
+
+section.redessociais ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section.redessociais ul li {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px rgb(148, 148, 148);
+    padding: 1vw;
+}
+
+section.redessociais ul li a {
+    margin: 0 2vw;
+}
+
+/* === RODAPÉ ===*/ 
+
+footer {
+    margin: 5vw auto 2vw auto;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #757575;
+    color: #7c7c7c;
+}
+
+footer p {
+    padding: 12px 0 12px 0;
+}
