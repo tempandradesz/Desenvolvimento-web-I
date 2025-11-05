@@ -1,0 +1,154 @@
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+/* === HEADER === */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 15vw;
+  align-items: center;
+}
+
+header nav a h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 18px 0 0;
+}
+
+header nav ul li a.atual {
+  color: #FB2E86;
+}
+
+/* === BANNER === */
+
+section.banner {
+  background-color: #F2F0FF;
+  display: flex;
+}
+
+section.banner div {
+  margin: 10vw 5vw;
+}
+
+section.banner div p.texto-rosa {
+  color: #FB2E86;
+  font-size: 0.9rem;
+  margin: 20px 20px;
+}
+
+section.banner div h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+section.banner div p.texto-cinza {
+  color: gray;
+  font-size: 0.9rem;
+  margin: 20px 20px;
+}
+
+section.banner div button {
+  background-color: #FB2E86;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+/* === Products === */
+
+section.products {
+  margin: 5vw 15vw;
+}
+
+section.products h2 {
+  color: #1A0B5B;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.products div {
+  display: flexz;
+  display: ruby;
+}
+
+
+/* === SUBSCRIBE === */
+
+
+section.subscribe {
+
+  /*era para ter um backgroud-image aqui, mas não deu certo por algum motivo*/
+  
+  text-align: center;
+}
+
+section.subscribe h2{
+  color: #1A0B5B;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+section.subscribe button {
+  background-color: #FB2E86;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+/* === RODAPÉ === */
+
+footer {
+  background-color: #F2F0FF;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 10vw;
+}
+
+footer h2{
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 3vw 10px 10px 10px;
+}
+
+footer p {
+  color: gray;
+  margin: 10px 10px;
+}
+
+footer nav ul li{
+  margin: 1vw 1vw;
+}
+
+footer nav ul li a {
+  color: gray;
+}
+footer nav ul li a.atual {
+  font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,204 @@
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+/*====================================
+HEADER
+====================================*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 10vw;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 0 1vw;
+}
+
+header ul li a {
+  color: gray;
+}
+
+.atual {
+  color: black;
+}
+
+header img {
+  width: 130px;
+}
+
+/*====================================
+BANNER
+====================================*/
+
+section.banner {
+  margin: 2vw 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 2.2rem;
+  margin: 0 0 1.45vw 0;
+  color: black;
+}
+
+section.banner div.imagem {
+  margin: 0 3vw 0 0;
+}
+
+section.banner h2 span {
+  color: #458FF6;
+}
+
+.banner p {
+  color: gray;
+  line-height: 1.254679vw;
+  margin: 0 0 1.45vw 0;
+}
+
+.banner button {
+  color: white;
+  background-color: #458FF6;
+  padding: 13.612732px 49.91274635237px;
+  border-radius: 30px;
+
+}
+
+/*====================================
+CUIDADOS
+====================================*/
+.cuidados {
+  margin: 2vw 10vw;
+}
+
+.cuidados h2 {
+  font-size: 2.2rem;
+  color: black;
+  text-align: center;
+  margin: 0 0 1vw 0;
+}
+
+.cuidados div {
+  border-bottom: 2px solid black;
+  margin: 0 30vw 1.5vw 30vw;
+}
+
+.cuidados>p {
+  color: gray;
+  text-align: center;
+}
+
+.cuidados ul {
+  display: flex;
+  margin: 4vw 13.4vw 0 13.4vw;
+  justify-content: space-between;
+}
+
+.cuidados ul li {
+  border: 1px solid gainsboro;
+  width: 16.615170000000001vw;
+  border-radius: 20px;
+  padding: 2.5vw 0 2vw 2vw;
+  align-items: center;
+  height: 16.565577544vw;
+}
+
+.cuidados ul li h3 {
+  color: black;
+  font-size: 1.25rem;
+  margin: 1.2vw 0 0.8vw 0;
+}
+
+.cuidados ul li p {
+  color: gray;
+}
+
+.cuidados button {
+  background-color: white;
+  border: 1px solid #458FF6;
+  color: #458FF6;
+  padding: 13.612732px 40.91274635237px;
+  border-radius: 30px;
+  justify-content: center;
+  margin: 3vw 0 0 35vw;
+
+}
+
+/* === DEPOIMENTOS === */
+
+.depoimentos {
+  background-color: #458FF6;
+  margin: 2vw 7vw;
+  border-radius: 20px;
+}
+
+.depoimentos h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-bottom: 5px solid white;
+  margin: 0 35.5vw 0 35.5vw;
+  padding: 25px 20px 18px 20px;
+}
+
+.depoimentos div.imagem-do-texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 25vw;
+}
+
+.depoimentos div.imagem-do-texto p {
+  color: white;
+  line-height: 1.254679vw;
+}
+
+/* === RODAPÉ === */
+
+footer {
+  background-color: #458FF6;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  margin: 5vw 15vw;
+}
+
+footer div p {
+  font-size: 1.1rem;
+  color:white;
+  margin: 3vw 0 0 0;
+}
+
+footer div p.direitos-reservados {
+  font-size: 1rem;
+  margin: 3vw 0 0 0;
+}
+
+footer div ul li a{
+  color: white;
+  line-height: 1.6vw;
+}
+a.mapa {
+  font-size: 1.2rem;
+  line-height: 3vw;
+  font-weight: bold;
+}
+
