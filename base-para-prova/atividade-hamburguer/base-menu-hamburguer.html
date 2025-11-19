@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Hamburguer</title>
   </head>
+
   <body>
+
+
+    <!--Parte do CSS-->
     <style>
       * {
         margin: 0;
@@ -43,6 +48,14 @@
         width: 5vw;
         background: rgb(231, 229, 229);
       }
+      
+      header nav ul {
+        /*display: none;*/
+        height: 0;
+        transition: 0.2s height;
+        overflow: hidden;
+        height: auto;
+      } 
 
       @media screen and (min-width: 800px) {
         header {
@@ -67,9 +80,10 @@
       }
     </style>
 
+
     <header>
       <nav>
-        <button aria-label="menu" onclick="mostraMenu()">
+        <button aria-label="menu" onclick="mostrarMenu()">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -101,6 +115,7 @@
       </nav>
     </header>
 
+
     <main>
       <section>
         <h1>Bem-vindo ao nosso site</h1>
@@ -124,13 +139,40 @@
         </p>
       </section>
     </main>
+
+
     <footer>
       <p>Todos os direitos reservados © 2025</p>
     </footer>
 
 
-
+    <!--Parte do JavaScript-->
     <script>
+      function mostrarMenu() {
+        console.log(`deu certo`);
+        const menu = document.querySelector(`header nav ul`);
+
+        //Antes com menu.style.display
+        /*
+        if (menu.style.display == `block`) {
+          menu.style.display = `none`;
+        } else {
+          menu.style.display = `block`;
+        }
+          */
+
+          //Agora com menu.style.height
+          if (menu.style.height == menu.scrollHeight + `px`) {
+            menu.style.height = `0px`;
+          } else {
+            menu.style.height = menu.scrollHeight + `px`;
+          }
+
+          
+
+      }
     </script>
+
   </body>
+
 </html>
